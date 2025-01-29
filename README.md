@@ -21,10 +21,10 @@ An interactive neural network visualization engine for both artificial and biolo
    ```bash
    # Initialize flox environment
    flox init
-   flox install nodejs
+   flox install nodejs python@3.11
 
    # Create Python virtual environment with uv
-   uv venv
+   uv venv --python python3.11
    uv pip install -r requirements.txt
    ```
 
@@ -53,10 +53,10 @@ If you prefer not to use flox/uv, follow the manual setup instructions below.
 npm install
 npm run dev
 
-# Terminal 2: Start Python service
+# Terminal 2: Start Python service (requires Python 3.11)
 cd python_service
 pip install -r requirements.txt
-python -m uvicorn main:app --reload  # Use python3 on Linux/Mac
+python3.11 -m uvicorn main:app --reload
 ```
 
 2. Open http://localhost:3000/demo
@@ -78,7 +78,7 @@ pip install -r requirements.txt  # Use pip3 on Linux/Mac
 2. Run the example:
 ```bash
 cd python_service
-python -m examples.mnist_cnn  # Use python3 on Linux/Mac
+python3.11 -m examples.mnist_cnn
 ```
 
 3. Start the services:
@@ -86,9 +86,9 @@ python -m examples.mnist_cnn  # Use python3 on Linux/Mac
 # Terminal 1: Start frontend
 npm run dev
 
-# Terminal 2: Start Python service
+# Terminal 2: Start Python service (requires Python 3.11)
 cd python_service
-python -m uvicorn main:app --reload  # Use python3 on Linux/Mac
+python3.11 -m uvicorn main:app --reload
 ```
 
 4. Open http://localhost:3000/demo
