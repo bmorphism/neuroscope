@@ -2,6 +2,47 @@
 
 An interactive neural network visualization engine for both artificial and biological neural networks, designed to make neural architectures and their dynamics accessible and interpretable.
 
+## 🛠️ Development Environment Setup
+
+### Using flox and uv (Recommended)
+
+[flox](https://flox.dev) and [uv](https://github.com/astral-sh/uv) provide a streamlined development environment setup:
+
+1. Install flox:
+   - Download from [flox.dev](https://flox.dev)
+   - Follow the installation instructions for your platform
+
+2. Install uv:
+   ```bash
+   curl -LsSf https://astral.sh/uv/install.sh | sh
+   ```
+
+3. Set up the development environment:
+   ```bash
+   # Initialize flox environment
+   flox init
+   flox install nodejs
+
+   # Create Python virtual environment with uv
+   uv venv
+   uv pip install -r requirements.txt
+   ```
+
+4. Share the environment:
+   - The `.flox` directory contains everything needed to run this environment
+   - Others can use `flox activate` after cloning the repository
+   - For team collaboration:
+     ```bash
+     flox push  # Share via FloxHub
+     # Others can then use:
+     flox pull username/neuroscope
+     # or
+     flox activate -r username/neuroscope
+     ```
+
+### Traditional Setup
+If you prefer not to use flox/uv, follow the manual setup instructions below.
+
 ## 🚀 Quick Start
 
 ### Option 1: Visualize Your Own Model
