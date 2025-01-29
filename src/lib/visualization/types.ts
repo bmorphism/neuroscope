@@ -1,8 +1,6 @@
 import { SimulationNodeDatum, SimulationLinkDatum } from 'd3';
 import { Node, Connection } from '../types/network';
-import { LayoutOptions } from './layouts/types';
-
-export interface VisualizationNode {
+export interface VisualizationNode extends SimulationNodeDatum {
   id: string;
   label?: string;
   color?: string;
@@ -99,4 +97,4 @@ export interface GridLayoutOptions {
   rows?: number;
   columns?: number;
   padding?: number;
-} 
+}

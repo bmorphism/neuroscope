@@ -43,3 +43,10 @@ next-env.d.ts
 */__pycache__/
 */data
 */*/__pycache__/
+
+# clojure
+.clj-kondo/
+
+# model files
+*.pt
+*.pth
