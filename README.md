@@ -59,7 +59,7 @@ pip install -r requirements.txt
 python -m uvicorn main:app --reload  # Use python3 on Linux/Mac
 ```
 
-2. Open http://localhost:3000
+2. Open http://localhost:3000/demo
 
 3. Drag and drop your PyTorch model file (`.pt` or `.pth`) or visualization data (`.json`)
 
@@ -91,7 +91,7 @@ cd python_service
 python -m uvicorn main:app --reload  # Use python3 on Linux/Mac
 ```
 
-4. Open http://localhost:3000
+4. Open http://localhost:3000/demo
 
 5. Drag and drop:
    - `python_service/models/mnist_initial.pt` for initial architecture

@@ -46,3 +46,7 @@ next-env.d.ts
 
 # clojure
 .clj-kondo/
+
+# model files
+*.pt
+*.pth
